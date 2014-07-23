@@ -1,21 +1,21 @@
 <?php
 
-require_once(__DIR__ . '/../config.inc.php');
+require_once(__DIR__ . '/smcanvaslib/config.inc.php');
 
 /* what Canvas API user are we going to connect as? */
-require_once(APP_PATH . '/.ignore.read-only-authentication.inc.php');
+require_once(__DIR__ . '/.ignore.read-only-authentication.inc.php');
 
 /* configurable options */
 require_once(__DIR__ . '/config.inc.php');
 
 /* handles HTML page generation */
-require_once(APP_PATH . '/include/page-generator.inc.php');
+require_once(SMCANVASLIB_PATH . '/include/page-generator.inc.php');
 
 /* handles the core of the Canvas API interactions */
-require_once(APP_PATH . '/include/canvas-api.inc.php');
+require_once(SMCANVASLIB_PATH . '/include/canvas-api.inc.php');
 
 /* handles working directory functions */
-require_once(APP_PATH . '/include/working-directory.inc.php');
+require_once(SMCANVASLIB_PATH . '/include/working-directory.inc.php');
 
 // TODO: implement an import as well as an export!
 
